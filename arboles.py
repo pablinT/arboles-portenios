@@ -1,4 +1,4 @@
-#ejercicio 3.19
+
 import csv
 
 
@@ -21,7 +21,7 @@ def leer_arboles(nombre_archivo):
     return arboleda
 
 
-def altos_jacarandas(nombre_archivo): #ejercicio 3.19
+def altos_jacarandas(nombre_archivo): 
     arboleda=leer_arboles(nombre_archivo)
    
     G=[float(arbol['altura_tot']) for arbol in arboleda if arbol['nombre_com']=='Jacarandá' ]
@@ -31,7 +31,7 @@ def altos_jacarandas(nombre_archivo): #ejercicio 3.19
 
 
 
-def altos_y_diametros(nombre_archivo): #ejercicio 3.20
+def altos_y_diametros(nombre_archivo): 
 
     arboleda=leer_arboles(nombre_archivo)
     H=[(float(arbol['diametro']),float(arbol['altura_tot'])) for arbol in arboleda if arbol['nombre_com']=='Jacarandá' ]
